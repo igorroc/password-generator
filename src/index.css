@@ -1,5 +1,4 @@
 :root {
-	font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -19,4 +18,21 @@
 	--bg-color-2: #212025;
 	--text-color: #fff;
 	--stars-color: #f7cd6b;
+}
+
+* {
+	font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+	overflow: hidden;
+}
+
+#root {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(-90deg, var(--bg-color-1), var(--bg-color-2));
 }
