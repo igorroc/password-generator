@@ -36,3 +36,14 @@ body {
 	align-items: center;
 	background: linear-gradient(-90deg, var(--bg-color-1), var(--bg-color-2));
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}

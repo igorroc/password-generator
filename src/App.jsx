@@ -47,8 +47,15 @@ function App() {
 
 		forcaDaSenha *= tamanho
 		let newResult = ""
+
 		for (let i = 0; i < tamanho; i++) {
 			let randomNumber = Math.floor(Math.random() * alfabeto.length)
+
+			if (randomNumber <= alfabeto.length * 0.005 && tamanho - i > 3) {
+				newResult += "bia"
+				i += 3
+				continue
+			}
 
 			newResult += alfabeto[randomNumber]
 		}

@@ -1,6 +1,6 @@
 .App {
 	width: 80%;
-  max-width: 1200px;
+	max-width: 1200px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -17,6 +17,11 @@
 .App .resultado {
 	display: flex;
 	justify-content: space-between;
+}
+
+.App .resultado p {
+	width: calc(100% - 50px);
+	word-break: break-all;
 }
 
 .App .resultado .copy {
@@ -46,9 +51,16 @@
 	justify-content: space-between;
 }
 
+.App .tamanho p {
+	width: 20%;
+}
+
 .App .tamanho input {
-	width: 50px;
-	text-align: center;
+	width: 80%;
+	padding-right: 1em;
+	text-align: right;
+	color: var(--primary-color);
+	font-size: 2em;
 
 	background: none;
 	border: none;
@@ -71,17 +83,17 @@
 	padding: 0.5em;
 	border: none;
 	border-radius: 0.5em;
-	
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
 
-  background: var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+
+	background: var(--primary-color);
 	color: #232323;
 
 	font-weight: 700;
-  font-size: 1.2em;
+	font-size: 1.2em;
 	cursor: pointer;
 
 	transition: all 0.3s ease-out;
