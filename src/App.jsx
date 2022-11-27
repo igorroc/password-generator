@@ -53,7 +53,6 @@ function App() {
 			newResult += alfabeto[randomNumber]
 		}
 
-		console.log(forcaDaSenha)
 		if (forcaDaSenha < 10) setStrength(0)
 		else if (forcaDaSenha < 20) setStrength(1)
 		else if (forcaDaSenha < 30) setStrength(2)
@@ -98,7 +97,7 @@ function App() {
 							type="checkbox"
 							name="lowerCase"
 							id="lowerCase"
-              checked={lowerCase}
+							checked={lowerCase}
 							onChange={() => setLowerCase((prev) => !prev)}
 						/>
 						<label htmlFor="lowerCase">Incluir letras minusculas</label>
